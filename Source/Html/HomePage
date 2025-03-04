@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportix - Bilete Sport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sportix</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Acasă</a></li>
+                <li><a href="#sporturi">Sporturi</a></li>
+                <li><a href="#oferte">Oferte</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Coș</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Cumpără bilete la cele mai tari evenimente sportive!</h2>
+        <p>Fotbal, baschet, box, handbal și multe altele.</p>
+        <a href="#sporturi" class="btn">Vezi biletele</a>
+    </section>
+    
+    <section id="sporturi">
+        <h2>Sporturi Disponibile</h2>
+        <div class="sport-card">
+            <img src="football.jpg" alt="Fotbal">
+            <h3>Fotbal</h3>
+        </div>
+        <div class="sport-card">
+            <img src="basketball.jpg" alt="Baschet">
+            <h3>Baschet</h3>
+        </div>
+        <div class="sport-card">
+            <img src="boxing.jpg" alt="Box">
+            <h3>Box</h3>
+        </div>
+        <div class="sport-card">
+            <img src="handball.jpg" alt="Handbal">
+            <h3>Handbal</h3>
+        </div>
+    </section>
+    
+    <section id="oferte">
+        <h2>Oferte Speciale</h2>
+        <p>Reduceri exclusive pentru fanii sporturilor!</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sportix - Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
