@@ -1,4 +1,4 @@
-/* Resetare stiluri implicite pentru a asigura consistența în toate browserele */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     background-color: #2c3e50;
     color: white;
@@ -24,7 +23,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Navigare */
 nav ul {
     list-style-type: none;
 }
@@ -44,12 +42,10 @@ nav ul li a:hover {
     color: #3498db;
 }
 
-/* Main section */
 main {
     padding: 20px;
 }
 
-/* Secțiunea introductivă */
 .intro {
     text-align: center;
     margin-bottom: 30px;
@@ -65,38 +61,52 @@ main {
     color: #7f8c8d;
 }
 
-/* Secțiunea de sporturi */
-.sports {
-    text-align: center;
+.events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.sports h2 {
-    font-size: 2em;
+.event {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event h3 {
+    font-size: 1.8em;
     color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 1.1em;
+    color: #7f8c8d;
     margin-bottom: 20px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.btn {
+.event .btn {
     background-color: #3498db;
     color: white;
-    padding: 15px 25px;
-    font-size: 1.2em;
+    padding: 10px 20px;
+    font-size: 1.1em;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.event .btn:hover {
     background-color: #2980b9;
 }
 
-/* Footer */
 footer {
     background-color: #2c3e50;
     color: white;
