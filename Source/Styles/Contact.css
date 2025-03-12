@@ -57,7 +57,7 @@ nav a {
 }
 
 .contact-form button {
-    background-color: #27ae60;
+    background-color: #635994;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -65,10 +65,11 @@ nav a {
     border-radius: 5px;
     font-size: 16px;
     margin-top: 15px;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #219150;
+    background-color: #4b4470;
 }
 
 footer {
