@@ -27,19 +27,53 @@
             <p>Sportix este platforma ta de încredere pentru achiziționarea biletelor la cele mai tari evenimente sportive. Alege sportul tău preferat și cumpără biletele rapid și ușor!</p>
         </section>
 
-        <section class="sports">
-            <h2>Alege un sport:</h2>
-            <div class="buttons">
-                <a href="Fotbal.html" class="btn">Fotbal</a>
-                <a href="Baschet.html" class="btn">Baschet</a>
-                <a href="Box.html" class="btn">Box</a>
-                <a href="Handbal.html" class="btn">Handbal</a>
+        <section class="slider">
+            <div class="slides">
+                <img src="../Images/football.jpg" alt="Fotbal">
+                <img src="../Images/basketball.jpg" alt="Baschet">
+                <img src="../Images/boxing.jpg" alt="Box">
+                <img src="../Images/handball.jpg" alt="Handbal">
             </div>
         </section>
+
+        <section class="why-sportix">
+            <h2>De ce să alegi Sportix?</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>✔️ Rapid și ușor</h3>
+                    <p>Cumpără bilete în doar câteva clicuri.</p>
+                </div>
+                <div class="benefit">
+                    <h3>✔️ Cele mai bune oferte</h3>
+                    <p>Beneficiază de prețuri competitive și reduceri exclusive.</p>
+                </div>
+                <div class="benefit">
+                    <h3>✔️ 100% Siguranță</h3>
+                    <p>Plăți securizate și suport clienți dedicat.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
     
     <footer>
         <p>&copy; 2025 Sportix. Toate drepturile rezervate.</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slides img");
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+            setTimeout(showSlides, 3000);
+        }
+
+        document.addEventListener("DOMContentLoaded", showSlides);
+    </script>
+    
 </body>
 </html>
