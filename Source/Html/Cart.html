@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sportix - Coșul de cumpărături</title>
     <link rel="stylesheet" href="../Styles/Cart.css">
+    <script src="../Scripts/cart.js"></script>
 </head>
 <body>
     <header>
         <h1>Coș de cumpărături</h1>
         <nav>
             <ul>
-                <li><a href="Homepage.html">Acasă</a></li>
+                <li><a href="Index.html">Acasă</a></li>
                 <li><a href="Fotbal.html">Fotbal</a></li>
                 <li><a href="Baschet.html">Baschet</a></li>
                 <li><a href="Box.html">Box</a></li>
-                <li><a href="Handbal.html">Handbal</a></li>
+                <li><a href="Handball.html">Handbal</a></li>
+                <li><a href="Cart.html">Coș de cumpărături</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -25,19 +27,10 @@
         <section class="cart">
             <h2>Coșul tău de cumpărături</h2>
 
-            <div class="cart-item">
-                <p>Eveniment: Fotbal - Meciul XYZ</p>
-                <p>Pret: 50 RON</p>
-                <button class="remove-item">Șterge</button>
-            </div>
-            <div class="cart-item">
-                <p>Eveniment: Baschet - Meciul ABC</p>
-                <p>Pret: 40 RON</p>
-                <button class="remove-item">Șterge</button>
-            </div>
+            <div id="cart-items"></div>
 
             <div class="total">
-                <p><strong>Total: 90 RON</strong></p>
+                <p><strong>Total: <span id="total-price">0</span> RON</strong></p>
             </div>
 
             <button class="checkout-btn">Finalizează comanda</button>
