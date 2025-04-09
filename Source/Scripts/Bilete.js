@@ -12,13 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const ticket = {
                 title: title,
                 details: details,
-                quantity: 1 // implicit 1 bilet
+                quantity: 1
             };
 
-            // Ia cartul din localStorage sau initializează unul nou
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            // Verificăm dacă biletul există deja (după titlu și detalii)
             const existing = cart.find(item => item.title === ticket.title && item.details === ticket.details);
 
             if (existing) {
@@ -27,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 cart.push(ticket);
             }
 
-            // Salvăm înapoi în localStorage
             localStorage.setItem("cart", JSON.stringify(cart));
 
             alert("Bilet adăugat în coș!");

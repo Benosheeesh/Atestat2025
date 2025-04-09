@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let total = 0;
 
         cart.forEach((item, index) => {
-            const pricePerTicket = 50; // Poți schimba în funcție de tipul de bilet
+            const pricePerTicket = 50;
             const itemTotal = item.quantity * pricePerTicket;
             total += itemTotal;
 
@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
         totalElement.textContent = total;
     }
 
-    // Ștergere bilet
     cartContainer.addEventListener("click", (e) => {
         if (e.target.classList.contains("remove-item")) {
             const index = e.target.getAttribute("data-index");
@@ -43,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Actualizare cantitate
     cartContainer.addEventListener("input", (e) => {
         if (e.target.classList.contains("qty-input")) {
             const index = e.target.getAttribute("data-index");
