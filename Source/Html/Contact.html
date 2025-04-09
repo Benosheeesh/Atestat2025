@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sportix - Contactează-ne</title>
     <link rel="stylesheet" href="../Styles/Contact.css">
+    <link rel="stylesheet" href="../Styles/ContactDark.css">
 </head>
 <body>
     <header>
         <h1>Contactează-ne</h1>
         <nav>
             <ul>
+                <li><a>Light/Dark Mode</a></li>
                 <li><a href="Index.html">Acasă</a></li>
                 <li><a href="Fotbal.html">Fotbal</a></li>
                 <li><a href="Baschet.html">Baschet</a></li>
@@ -25,7 +27,7 @@
     <main>
         <section class="contact-form">
             <h2>Trimite-ne un mesaj</h2>
-            <form action="#" method="post">
+            <form id="contactForm" action="#" method="post">
                 <label for="name">Nume și Prenume:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -46,5 +48,31 @@
     <footer>
         <p>&copy; 2025 Sportix. Toate drepturile rezervate.</p>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne trimiterea formularului prin metoda tradițională
+
+            // Obține valorile câmpurilor din formular
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Creează un text care să reprezinte conținutul fișierului
+            const fileContent = `Nume și Prenume: ${name}\nEmail: ${email}\nSubiect: ${subject}\nMesaj: ${message}\n`;
+
+            // Creează un obiect Blob cu datele (textul) și tipul de fișier
+            const blob = new Blob([fileContent], { type: 'text/plain' });
+
+            // Creează un link pentru descărcarea fișierului
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'mesaj_contact.txt'; // Numele fișierului care va fi descărcat
+
+            // Declanșează descărcarea fișierului
+            link.click();
+        });
+    </script>
 </body>
 </html>

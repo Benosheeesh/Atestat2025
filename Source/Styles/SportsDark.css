@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundal întunecat */
+    color: #e0e0e0; /* Text deschis */
+    text-align: center;
+}
+
+header {
+    background-color: #1c1c1c; /* Fundal header întunecat */
+    color: #ecf0f1; /* Text deschis */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ecf0f1; /* Link-uri deschise */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    margin: 20px;
+    padding: 20px;
+    background-color: #2c3e50; /* Fundal mai închis pentru secțiunea intro */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Umbră mai puternică */
+    border-radius: 8px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #ecf0f1; /* Titlu mai deschis */
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #b0b0b0; /* Text pentru paragraf mai deschis */
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event {
+    background-color: #2c3e50; /* Fundal mai închis pentru evenimente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Umbră mai puternică */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Umbră mai pronunțată la hover */
+}
+
+.event h3 {
+    font-size: 1.8em;
+    color: #ecf0f1; /* Titlu eveniment în culoare deschisă */
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 1.1em;
+    color: #b0b0b0; /* Text pentru descrierea evenimentului mai deschis */
+    margin-bottom: 20px;
+}
+
+.event .btn {
+    background-color: #635994; /* Buton violet închis */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.event .btn:hover {
+    background-color: #4b4470; /* Culoare mai închisă la hover */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c; /* Fundal footer întunecat */
+    color: #ecf0f1; /* Text deschis */
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}

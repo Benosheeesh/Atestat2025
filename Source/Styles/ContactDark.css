@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundal întunecat */
+    color: #e0e0e0; /* Text deschis */
+    text-align: center;
+}
+
+header {
+    background-color: #1c1c1c; /* Fundal header întunecat */
+    color: #ecf0f1; /* Text deschis */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ecf0f1; /* Link-uri deschise */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-form {
+    background-color: #2c3e50; /* Fundal formular întunecat */
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Umbră mai puternică */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #ecf0f1; /* Titlu în culoare deschisă */
+}
+
+.contact-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ecf0f1; /* Text pentru etichete */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Bordură mai deschisă */
+    border-radius: 5px;
+    background-color: #333; /* Fundal câmpuri input mai închis */
+    color: #e0e0e0; /* Text câmpuri input deschis */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa; /* Placeholder mai deschis */
+}
+
+.contact-form button {
+    background-color: #635994; /* Butonul de trimitere violet închis */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #4b4470; /* Culoare mai închisă la hover */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c; /* Fundal footer întunecat */
+    color: #ecf0f1; /* Text deschis */
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+}

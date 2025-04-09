@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundal întunecat */
+    color: #e0e0e0; /* Text deschis */
+    text-align: center;
+}
+
+header {
+    background-color: #1c1c1c; /* Fundal header întunecat */
+    color: #ecf0f1; /* Text deschis */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ecf0f1; /* Link-uri deschise */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cart {
+    background-color: #2c3e50; /* Fundal cart întunecat */
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Umbră mai puternică */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #444; /* Linia de separare mai deschisă */
+}
+
+.remove-item {
+    background-color: #e74c3c; /* Butonul de eliminare roșu */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-item:hover {
+    background-color: #c0392b; /* Culoare mai închisă la hover */
+}
+
+.total {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ecf0f1; /* Text deschis pentru total */
+}
+
+.checkout-btn {
+    background-color: #635994; /* Butonul de checkout violet închis */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #4b4470; /* Culoare mai închisă la hover */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c; /* Fundal footer întunecat */
+    color: #ecf0f1; /* Text deschis */
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
