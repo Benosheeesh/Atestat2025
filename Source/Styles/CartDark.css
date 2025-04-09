@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Fundal întunecat */
-    color: #e0e0e0; /* Text deschis */
+    background-color: #121212; 
+    color: #e0e0e0; 
     text-align: center;
 }
 
 header {
-    background-color: #1c1c1c; /* Fundal header întunecat */
-    color: #ecf0f1; /* Text deschis */
+    background-color: #1c1c1c; 
+    color: #ecf0f1; 
     padding: 20px 0;
 }
 
@@ -24,18 +24,18 @@ nav ul li {
 }
 
 nav a {
-    color: #ecf0f1; /* Link-uri deschise */
+    color: #ecf0f1; 
     text-decoration: none;
     font-weight: bold;
 }
 
 .cart {
-    background-color: #2c3e50; /* Fundal cart întunecat */
+    background-color: #2c3e50; 
     max-width: 600px;
     margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Umbră mai puternică */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
 .cart-item {
@@ -43,11 +43,11 @@ nav a {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #444; /* Linia de separare mai deschisă */
+    border-bottom: 1px solid #444; 
 }
 
 .remove-item {
-    background-color: #e74c3c; /* Butonul de eliminare roșu */
+    background-color: #e74c3c; 
     color: white;
     border: none;
     padding: 8px 12px;
@@ -56,18 +56,18 @@ nav a {
 }
 
 .remove-item:hover {
-    background-color: #c0392b; /* Culoare mai închisă la hover */
+    background-color: #c0392b; 
 }
 
 .total {
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
-    color: #ecf0f1; /* Text deschis pentru total */
+    color: #ecf0f1; 
 }
 
 .checkout-btn {
-    background-color: #635994; /* Butonul de checkout violet închis */
+    background-color: #635994; 
     color: white;
     border: none;
     padding: 10px 15px;
@@ -79,15 +79,15 @@ nav a {
 }
 
 .checkout-btn:hover {
-    background-color: #4b4470; /* Culoare mai închisă la hover */
+    background-color: #4b4470; 
 }
 
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: #1c1c1c; /* Fundal footer întunecat */
-    color: #ecf0f1; /* Text deschis */
+    background-color: #1c1c1c; 
+    color: #ecf0f1; 
     text-align: center;
     padding: 20px;
     margin-top: 30px;

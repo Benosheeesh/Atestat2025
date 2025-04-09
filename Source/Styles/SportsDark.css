@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Fundal întunecat */
-    color: #e0e0e0; /* Text deschis */
+    background-color: #121212;
+    color: #e0e0e0; 
     text-align: center;
 }
 
 header {
-    background-color: #1c1c1c; /* Fundal header întunecat */
-    color: #ecf0f1; /* Text deschis */
+    background-color: #1c1c1c; 
+    color: #ecf0f1;
     padding: 20px 0;
 }
 
@@ -24,7 +24,7 @@ nav ul li {
 }
 
 nav a {
-    color: #ecf0f1; /* Link-uri deschise */
+    color: #ecf0f1;
     text-decoration: none;
     font-weight: bold;
 }
@@ -36,19 +36,19 @@ main {
 .intro {
     margin: 20px;
     padding: 20px;
-    background-color: #2c3e50; /* Fundal mai închis pentru secțiunea intro */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Umbră mai puternică */
+    background-color: #2c3e50;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 }
 
 .intro h2 {
     font-size: 2em;
-    color: #ecf0f1; /* Titlu mai deschis */
+    color: #ecf0f1;
 }
 
 .intro p {
     font-size: 1.2em;
-    color: #b0b0b0; /* Text pentru paragraf mai deschis */
+    color: #b0b0b0;
 }
 
 .events {
@@ -58,33 +58,33 @@ main {
 }
 
 .event {
-    background-color: #2c3e50; /* Fundal mai închis pentru evenimente */
+    background-color: #2c3e50; 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Umbră mai puternică */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Umbră mai pronunțată la hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
 }
 
 .event h3 {
     font-size: 1.8em;
-    color: #ecf0f1; /* Titlu eveniment în culoare deschisă */
+    color: #ecf0f1;
     margin-bottom: 10px;
 }
 
 .event p {
     font-size: 1.1em;
-    color: #b0b0b0; /* Text pentru descrierea evenimentului mai deschis */
+    color: #b0b0b0; 
     margin-bottom: 20px;
 }
 
 .event .btn {
-    background-color: #635994; /* Buton violet închis */
+    background-color: #635994; 
     color: white;
     padding: 10px 20px;
     font-size: 1.1em;
@@ -94,15 +94,15 @@ main {
 }
 
 .event .btn:hover {
-    background-color: #4b4470; /* Culoare mai închisă la hover */
+    background-color: #4b4470; 
 }
 
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: #1c1c1c; /* Fundal footer întunecat */
-    color: #ecf0f1; /* Text deschis */
+    background-color: #1c1c1c; 
+    color: #ecf0f1;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
